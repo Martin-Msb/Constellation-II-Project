@@ -1,2 +1,2 @@
 # Constellation-II-Project
-Image networks on constellation dataset
+Image classification networks on constellation dataset
