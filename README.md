@@ -19,7 +19,6 @@ The data originates from [Constellation Datasets](https://osf.io/qf5tz/) provide
 
 Our first approach is to use pix2pix, which requires training data to be structured in a paired manner, where the input and output is combined together. The combination can be done by calling pix2pix's script:`python datasets/combine_A_and_B.py --fold_A /path/to/data/A --fold_B /path/to/data/B --fold_AB /path/to/data`
 
-However, before this, creating `fold_A` and `fold_B` can be done by running our `pix2pix/scripts/restructure_all_difficulties.py`
-This will create several folds for `fold_A`, enabling separate training for multiple constellation difficulty levels.
-Both folds will include their own training and hold-out validation and test sets.
+However, before this, creating `fold_A` and `fold_B` can be done by running our `pix2pix/scripts/restructure_all_difficulties.py` script.
+The script requires you to have placed the unstructured data in the `unstructured_data` folder. By default the folder should be called `Constellations_All_003`, but change it as required. This will create several folds for `fold_A`, enabling separate training for multiple constellation difficulty levels. Both folds will include their own training and hold-out validation and test sets.
 
