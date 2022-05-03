@@ -3,11 +3,11 @@
 
 This project employs image-to-image conversion networks to try and convert constellation images into their corresponding object outline image (Figure A). 
 
-![FigureA](/images/figureA.png")
+![FigureA](images/figureA.png")
 
 Beside outlining, we also aim to determine at which point the outline is too difficult to find, given increasingly difficult constellations (Figure B).
 
-![FigureB](/images/figureB.png")
+![FigureB](images/figureB.png")
 
 The conversion networks we use are [pix2pix and cycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 
